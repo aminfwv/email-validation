@@ -1,0 +1,84 @@
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vh;
+    background: #373737;
+}
+
+.container{
+    margin: 150px auto;
+    padding: 50px;
+    width: 400px;
+    height: 200px;
+    background: #302f2f;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    display: block;
+    position: relative;
+    font-size: 20px;
+    color: #f9f9f9;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#form{
+    position: relative;
+}
+
+#form #input{
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+#form .input-box{
+    position: relative;
+}
+
+#input{
+    display: block;
+    color: #000;
+    font-weight: 300;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#form.invalid .input-box:before{
+    content: "";
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background: url(invalid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
+#form.valid .input-box:before{
+    content: "";
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background: url(valid.png);
+    background-size: cover;
+    z-index: 1000;
+}
